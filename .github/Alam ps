@@ -1,0 +1,97 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Growtopia Private Server Website">
+    <meta name="keywords" content="gtps, Growtopia, GTPS">
+    <meta property="og:title" content="Alam~PS "/>
+    <meta property="og:description" content="Growtopia Private Server Website"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>GTPS Website</title>
+</head>
+<body>
+    <div id="home">
+        <header class="header">
+            <a href="#" id="logo"></a>
+            <ul>
+                <li><a href="#home" class="navLink navActive">Home</a></li>
+                <li><a href="#about" class="navLink">About</a></li>
+                <li><a href="#feature" class="navLink">Feature</a></li>
+                <li><a href="#tutorial" class="navLink">Tutorial</a></li>
+            </ul>
+            <div class="burger" onclick="buttonClick()"><i class="fas fa-bars"></i></div>
+        </header><div class="describe">
+        <h1 class="serverName">Alam~PS Server</h1>
+        <p id="serverDescription">A private server for Growtopia fans.</p>
+        <div class="link">
+            <a href="#" class="whatsappLink">Join WhatsApp Group</a>
+            <a href="#tutorial">How To Play</a>
+        </div>
+    </div>
+</div>
+
+<div id="about">
+    <div class="inform">
+        <h1><span id="singleA">A</span>bout Us</h1>
+        <p id="aboutDesc">Server is created by <span id="adminName">Admin</span></p>
+        <ul>
+            <li><i class="fas fa-user-friends"></i><p>We're a Good Community</p></li>
+            <li><i class="far fa-clock"></i><p>We're an active server</p></li>
+            <li><i class="fas fa-server"></i><p>We have special features</p></li>
+        </ul>
+    </div>
+</div>
+
+<div id="tutorial">
+    <div class="play">
+        <h1 id="tutorialHt"><span>H</span>ow To Play</h1>
+        <div id="playAbout">Tutorial on how to play Alam~PS on your device</div>
+        <input type="text" id="copyFrom" value="" style="position: absolute; left: -500%;">
+        <ul>
+            <li>
+                <img src="img/window.png" alt="window">
+                <section class="text">
+                    <h1>PC</h1>
+                    <p>1. Open Notepad as administrator<br>
+                        2. Click on <span>File</span> and select <span>Open</span><br>
+                        3. Go to <span>C:\Windows\System32\drivers\etc</span> and open the <span>Hosts</span> file<br>
+                        4. Add the server IP to the file:<br>
+                        <span id="serverIp">159.65.150.29</span> growtopia1.com<br>
+                        <span id="serverIp">159.65.150.29</span> growtopia2.com<br>
+                        <span id="serverIp">159.65.150.29</span> www.growtopia1.com<br>
+                        <span id="serverIp">159.65.150.29</span> www.growtopia2.com<br>
+                        <span id="serverIp">159.65.150.29</span> RvLnd.here<br>
+                        5. Save the file and log in to Growtopia
+                    </p>
+                    <div class="buttonLink">
+                        <h2 onclick="copyIp()">Copy IP Address</h2>
+                        <h3 class="h3Copy" style="display:none;">IP Address Copied!</h3>
+                    </div>
+                </section>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<footer>
+    <p id="serverFooter">&copy; 2025 Alam~PS. All rights reserved.</p>
+</footer>
+
+<script>
+    function copyIp() {
+        var copyText = document.getElementById("serverIp").innerText;
+        navigator.clipboard.writeText(copyText).then(() => {
+            document.querySelector(".h3Copy").style.display = "block";
+            setTimeout(() => {
+                document.querySelector(".h3Copy").style.display = "none";
+            }, 2000);
+        });
+    }
+</script>
+<script src="config.js"></script>
+<script src="src/index.js"></script>
+
+</body>
+</html>
