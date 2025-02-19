@@ -1,0 +1,19 @@
+meta: charset: "UTF-8" http-equiv: "X-UA-Compatible" content: "IE=edge" description: "Growtopia Private Server Website" keywords: ["gtps", "Growtopia", "GTPS"] og: title: "Alam~PS" description: "Growtopia Private Server Website" viewport: "width=device-width, initial-scale=1.0" stylesheets: - "src/style.css" - "https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+
+header: logo: "#" nav: - name: "Home" link: "#home" active: true - name: "About" link: "#about" - name: "Feature" link: "#feature" - name: "Tutorial" link: "#tutorial" burger_icon: "fas fa-bars" onclick: "buttonClick()"
+
+description: server_name: "Alam~PS Server" server_description: "A private server for Growtopia fans." links: - text: "Join WhatsApp Group" href: "#" - text: "How To Play" href: "#tutorial"
+
+about: title: "About Us" description: "Server is created by Admin" features: - icon: "fas fa-user-friends" text: "We're a Good Community" - icon: "far fa-clock" text: "We're an active server" - icon: "fas fa-server" text: "We have special features"
+
+tutorial: title: "How To Play" description: "Tutorial on how to play Alam~PS on your device" steps: - platform: "PC" instructions: - "Open Notepad as administrator" - "Click on File and select Open" - "Go to C:\Windows\System32\drivers\etc and open the Hosts file" - "Add the server IP to the file:" server_ips: - "159.65.150.29 growtopia1.com" - "159.65.150.29 growtopia2.com" - "159.65.150.29 www.growtopia1.com" - "159.65.150.29 www.growtopia2.com" - "159.65.150.29 RvLnd.here" final_step: "Save the file and log in to Growtopia" copy_ip_button: "Copy IP Address"
+
+footer: text: "© 2025 Alam~PS. All rights reserved."
+
+scripts:
+
+"config.js"
+
+"src/index.js"
+
+
